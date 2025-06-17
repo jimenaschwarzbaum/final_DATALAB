@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+
+    src: url('../assets/AveriaSansLibre-Bold.ttf');
+    font-family: miFuente;
+
+
+}
+
+header {
+    
+    background-color: #303238;
+    color: #f5f5f5;
+}
+
+body {
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    margin: 0;
+    color: #2b2b2b;
+    background-color: #f5f5f5;
+    text-align: center;
+
+}
+
+
+nav { 
+background-color: #303238; 
+
+}
+
+nav a { 
+
+text-decoration:none;
+color: #f5f5f5;
+font-size: 30px;
+font-weight: 550;
+padding: 20px;
+border: solid#f5f5f5;
+border-radius: 30px;
+transition: all 0.5s linear;
+
+
+}
+
+nav a:hover {
+    background-color: #526bb9;
+    border: solid  #526bb9;
+}
+
+nav div {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicios {
+padding: 10px;
+gap: 60px;
+display: flex;
+margin: auto;
+justify-content: center;
+}
+
+.servicio {
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+   
+}
+
+
+
+header, main, nav, footer {
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-family: miFuente;
+}
+
+h1 {
+    font-size: 80px;
+    animation: inicio 1s;
+}
+
+
+@keyframes inicio {
+
+from { 
+opacity: 0;
+translate: -100px;}
+
+to { 
+opacity: 1;
+translate: 0px;}
+
+}
+
+header p {
+    animation: iniciosubtitulos 1s;
+}
+
+@keyframes iniciosubtitulos {
+
+from { 
+opacity: 0;
+translate: 100px;}
+
+to { opacity: 1;
+translate: 0px;}
+
+}
+
+h2 {
+    font-size: 40px;
+    animation: iniciosecundario 1s;
+}
+
+@keyframes iniciosecundario {
+
+from { 
+opacity: 0;
+scale: 0.5;}
+
+to { opacity: 1;
+scale: 1;} 
+
+}
+
+section, #portfolio div { width: 100%;}
+
+#portfolio div {
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+
+}
+
+section { 
+margin-top: 50px;
+margin-bottom: 50px;}
+
+
+img { width: 100%;}
+
+#portfolio div img {
+
+border-radius: 50px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+transition: all 0.5s linear;
+}
+
+
+#portfolio div img:hover {
+
+transform: scale(1.06) translate(10px);
+box-shadow: 0 0 20px rgba(0,0,0,0.9); 
+
+}
+
+
+.proyectos {
+
+display: flex;
+gap: 30px;
+justify-content: center;
+padding: 10px;
+
+}
+
+
+.proyecto {
+width: 100%;
+max-width: 1000px;
+box-shadow: 0 0 10px rgba(0,0,0,0.4);
+border-radius: 50px;
+background-color: #6e81b8;
+color: #f5f5f5;
+padding: 30px;
+display: flex;
+flex-direction:column;
+transition: all 0.5s linear;
+
+}
+
+.proyecto p {
+    font-style: italic;
+}
+
+.proyecto img {
+    border-radius: 40px;
+}
+
+.proyecto:hover {
+
+background-color: #303238;
+box-shadow: 0 0 10px rgba(0,0,0,0.9);
+transform: scale(1.06);
+
+}
+
+#contacto div {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto a {
+    text-decoration: none;
+    color: #526bb9;
+    font-weight: 600;
+
+}
+
+
+footer { background-color: #303238; color: white;}
+
+
+
+
